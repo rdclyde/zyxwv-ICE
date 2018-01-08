@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/background"
+    android:textColor="@color/BodyText"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_text_edit" tools:context="net.zyxwv.ice.TextEdit">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:background="@color/TitleBg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ico_ice"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/AppTitle"
+            android:textColor="@color/HeaderText"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_marginLeft="5sp"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="header"
+        android:background="@color/HeaderBg"
+        android:textColor="@color/HeaderText"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        />
+    <EditText
+        android:text="your allergies in this wrapping box\nWith a \nCR."
+        android:id="@+id/etInput"
+        android:singleLine="false"
+        android:lines="7"
+        android:gravity="top"
+        android:textColor="@color/BodyText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    </EditText>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="Save"
+            android:id="@+id/bnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Button>
+        <Button
+            android:text="Cancel"
+            android:id="@+id/bnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Button>
+    </LinearLayout>
+
+
+
+</LinearLayout>

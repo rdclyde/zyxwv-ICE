@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/background"
+    tools:showIn="@layout/activity_main"
+    tools:context=".Main">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/BodyText"
+            >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="@color/TitleBg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_ice"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/AppTitle"
+                    android:textColor="@color/HeaderText"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:layout_marginLeft="5sp"
+                    />
+            </LinearLayout>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sh_MyInfo"
+                android:background="@color/HeaderBg"
+                android:textColor="@color/HeaderText"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                />
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:stretchColumns="1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <ImageView
+                        android:id="@+id/ivSelf"
+                        android:layout_width="75sp"
+                        android:layout_height="70sp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/sticky"
+                        />
+                    <TextView
+                        android:id="@+id/tvMyInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/BodyText"
+                        android:textSize="14sp"
+                        />
+                    <ImageButton
+                        android:id="@+id/bnMyInfoEdit"
+                        android:layout_width="25dp"
+                        android:layout_height="50dp"
+                        android:gravity="right"
+                        android:background="#00000000"
+                        android:src="@drawable/ico_edit" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sh_MyAllergies"
+                android:background="@color/HeaderBg"
+                android:textColor="@color/HeaderText"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                />
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="0">
+                <TableRow>
+                    <TextView
+                        android:id="@+id/tvMyAllergies"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="None"
+                        android:textColor="@color/BodyText"
+                        android:textSize="14sp"
+                        />
+                    <ImageButton
+                        android:id="@+id/bnMyAllergiesEdit"
+                        android:layout_width="25dp"
+                        android:layout_height="50dp"
+                        android:gravity="right"
+                        android:background="#00000000"
+                        android:src="@drawable/ico_edit" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sh_MyConditions"
+                android:background="@color/HeaderBg"
+                android:textColor="@color/HeaderText"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                />
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="0">
+                <TableRow>
+                    <TextView
+                        android:id="@+id/tvMyConditions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="None"
+                        android:textColor="@color/BodyText"
+                        android:textSize="14sp"
+                        />
+                    <ImageButton
+                        android:id="@+id/bnMyConditionsEdit"
+                        android:layout_width="25dp"
+                        android:layout_height="50dp"
+                        android:gravity="right"
+                        android:background="#00000000"
+                        android:src="@drawable/ico_edit" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sh_MyMeds"
+                android:background="@color/HeaderBg"
+                android:textColor="@color/HeaderText"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                />
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="0">
+                <TableRow>
+                    <TextView
+                        android:id="@+id/tvMyMeds"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="None"
+                        android:textColor="@color/BodyText"
+                        android:textSize="14sp"
+                        />
+                    <ImageButton
+                        android:id="@+id/bnMyMedsEdit"
+                        android:layout_width="25dp"
+                        android:layout_height="50dp"
+                        android:gravity="right"
+                        android:background="#00000000"
+                        android:src="@drawable/ico_edit" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sh_1Contact"
+                android:background="@color/HeaderBg"
+                android:textColor="@color/HeaderText"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                />
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="0">
+                <TableRow>
+                    <TextView
+                        android:id="@+id/tv1Contact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="None"
+                        android:textColor="@color/BodyText"
+                        android:textSize="14sp"
+                        />
+                    <ImageButton
+                        android:id="@+id/bn1ContactEdit"
+                        android:layout_width="25dp"
+                        android:layout_height="50dp"
+                        android:gravity="right"
+                        android:background="#00000000"
+                        android:src="@drawable/ico_edit" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sh_2Contact"
+                android:background="@color/HeaderBg"
+                android:textColor="@color/HeaderText"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                />
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="0">
+                <TableRow>
+                    <TextView
+                        android:id="@+id/tv2Contact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="None"
+                        android:textColor="@color/BodyText"
+                        android:textSize="14sp"
+                        />
+                    <ImageButton
+                        android:id="@+id/bn2ContactEdit"
+                        android:layout_width="25dp"
+                        android:layout_height="50dp"
+                        android:gravity="right"
+                        android:background="#00000000"
+                        android:src="@drawable/ico_edit" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sh_PCF"
+                android:background="@color/HeaderBg"
+                android:textColor="@color/HeaderText"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                />
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="0">
+                <TableRow>
+                    <TextView
+                        android:id="@+id/tvPCF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="None"
+                        android:textColor="@color/BodyText"
+                        android:textSize="14sp"
+                        />
+                    <ImageButton
+                        android:id="@+id/bnPCFEdit"
+                        android:layout_width="25dp"
+                        android:layout_height="50dp"
+                        android:gravity="right"
+                        android:background="#00000000"
+                        android:src="@drawable/ico_edit" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sh_PCP"
+                android:background="@color/HeaderBg"
+                android:textColor="@color/HeaderText"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                />
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="0">
+                <TableRow>
+                    <TextView
+                        android:id="@+id/tvPCP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="None"
+                        android:textColor="@color/BodyText"
+                        android:textSize="14sp"
+                        />
+                    <ImageButton
+                        android:id="@+id/bnPCPEdit"
+                        android:layout_width="25dp"
+                        android:layout_height="50dp"
+                        android:gravity="right"
+                        android:background="#00000000"
+                        android:src="@drawable/ico_edit" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sh_SCP"
+                android:background="@color/HeaderBg"
+                android:textColor="@color/HeaderText"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                />
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="0">
+                <TableRow>
+                    <TextView
+                        android:id="@+id/tvSCP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="None"
+                        android:textColor="@color/BodyText"
+                        android:textSize="14sp"
+                        />
+                    <ImageButton
+                        android:id="@+id/bnSCPEdit"
+                        android:layout_width="25dp"
+                        android:layout_height="50dp"
+                        android:gravity="right"
+                        android:background="#00000000"
+                        android:src="@drawable/ico_edit" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sh_HealthIns"
+                android:background="@color/HeaderBg"
+                android:textColor="@color/HeaderText"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                />
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="0">
+                <TableRow>
+                    <TextView
+                        android:id="@+id/tvHealthIns"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="None"
+                        android:textColor="@color/BodyText"
+                        android:textSize="14sp"
+                        />
+                    <ImageButton
+                        android:id="@+id/bnHealthInsEdit"
+                        android:layout_width="25dp"
+                        android:layout_height="50dp"
+                        android:gravity="right"
+                        android:background="#00000000"
+                        android:src="@drawable/ico_edit" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sh_Notes"
+                android:background="@color/HeaderBg"
+                android:textColor="@color/HeaderText"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                />
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="0">
+                <TableRow>
+                    <TextView
+                        android:id="@+id/tvNotes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="None"
+                        android:textColor="@color/BodyText"
+                        android:textSize="14sp"
+                        />
+                    <ImageButton
+                        android:id="@+id/bnNotesEdit"
+                        android:layout_width="25dp"
+                        android:layout_height="50dp"
+                        android:gravity="right"
+                        android:background="#00000000"
+                        android:src="@drawable/ico_edit" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>
